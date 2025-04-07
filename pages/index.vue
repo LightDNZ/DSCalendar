@@ -190,6 +190,10 @@ const showCalendar = ref(false);
 const showNotesSidebar = ref(false);
 const showDropdown = ref(false);
 
+definePageMeta({
+  middleware: ['auth']
+})
+
 const onDateClick = () => {
   showCalendar.value = !showCalendar.value;
 };
