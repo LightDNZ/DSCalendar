@@ -1,75 +1,94 @@
-# Nuxt Minimal Starter
+# 🗓️ DSCalendar
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+**DSCalendar** é um sistema de calendário e anotações escolares desenvolvido com **Nuxt 3** e **Supabase**. O objetivo é ajudar estudantes a organizarem sua rotina escolar com praticidade, colaborando com eventos e criando notas personalizadas.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 🚀 Funcionalidades
+
+- 📅 **Calendário interativo** com eventos em tempo real  
+- ✍️ **Notas privadas** salvas localmente com sincronização futura  
+- 👨‍🎓 **Autenticação de usuários** (login/registro)  
+- 🔧 **Edição colaborativa de eventos** (todos os usuários podem editar o calendário)  
+- 🌙 **Modo escuro/claro**  
+- 📦 Integração com **Supabase** (Auth + Database)  
+- ⚡ Interface rápida com **Vue 3**, **Pinia** e **FullCalendar**
+
+---
+
+## 🖼️ Demonstração
+
+> Em breve: [https://dscalendar.vercel.app](https://dscalendar.vercel.app)
+
+---
+
+## 🧱 Tecnologias usadas
+
+| Stack        | Tecnologias                                          |
+|--------------|-------------------------------------------------------|
+| 💚 Frontend  | Nuxt 3, Vue 3, TailwindCSS, Pinia, FullCalendar       |
+| 🛠️ Backend   | Supabase (Database + Auth)                            |
+| 🎨 Estilo    | Tailwind + UI personalizada                           |
+| 🔒 Auth      | Nuxt Auth (via API)                                   |
+
+---
+
+## ⚙️ Instalação
+
+1. **Clone o projeto:**
 
 ```bash
-# npm
+git clone https://github.com/seu-usuario/dscalendar.git
+cd dscalendar
+```
+
+2. **Instale as dependências:**
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+3. **Configure o Supabase:**
 
-Start the development server on `http://localhost:3000`:
+Crie um arquivo `.env` com as credenciais:
+
+```env
+SUPABASE_URL=https://xxxx.supabase.co
+SUPABASE_ANON_KEY=seu_anon_key
+```
+
+4. **Configure o Prisma (se necessário):**
 
 ```bash
-# npm
+npx prisma generate
+```
+
+5. **Inicie o servidor:**
+
+```bash
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Acesse: [http://localhost:3000](http://localhost:3000)
 
-Build the application for production:
 
-```bash
-# npm
-npm run build
+---
 
-# pnpm
-pnpm build
+## ✨ Destaques técnicos
 
-# yarn
-yarn build
+- Eventos do calendário são atualizados em tempo real via Supabase  
+- Interface leve e adaptada a dispositivos móveis  
+- Integração manual com Supabase (sem módulo oficial)  
 
-# bun
-bun run build
-```
+---
 
-Locally preview production build:
+## 🧪 Funcionalidades futuras
 
-```bash
-# npm
-npm run preview
+- 🔔 Notificações automáticas de eventos próximos  
+- 📱 PWA para uso offline  
+- 👨‍🏫 Perfis de professores/alunos (roles)  
+- 🔄 Modo admin (opcional no futuro)  
+- 📊 Estatísticas de uso para usuários
 
-# pnpm
-pnpm preview
+---
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
