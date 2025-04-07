@@ -57,13 +57,7 @@ SUPABASE_URL=https://xxxx.supabase.co
 SUPABASE_ANON_KEY=seu_anon_key
 ```
 
-4. **Configure o Prisma (se necessário):**
-
-```bash
-npx prisma generate
-```
-
-5. **Inicie o servidor:**
+4. **Inicie o servidor:**
 
 ```bash
 npm run dev
