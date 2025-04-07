@@ -194,6 +194,10 @@ definePageMeta({
   middleware: ['auth']
 })
 
+useHead({
+  title: 'DSCalendar - Calendário Escolar'
+})
+
 const onDateClick = () => {
   showCalendar.value = !showCalendar.value;
 };

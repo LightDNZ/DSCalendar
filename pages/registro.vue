@@ -63,6 +63,10 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import Swal from 'sweetalert2'
 
+useHead({
+  title: 'Criar conta - DSCalendar'
+})
+
 const email = ref('')
 const password = ref('')
 const router = useRouter()
