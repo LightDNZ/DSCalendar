@@ -6,19 +6,18 @@
 
 ## 🚀 Funcionalidades
 
-- 📅 **Calendário interativo** com eventos em tempo real  
-- ✍️ **Notas privadas** salvas localmente com sincronização futura  
+- 📅 **Calendário interativo** com eventos em tempo real    
 - 👨‍🎓 **Autenticação de usuários** (login/registro)  
 - 🔧 **Edição colaborativa de eventos** (todos os usuários podem editar o calendário)  
 - 🌙 **Modo escuro/claro**  
 - 📦 Integração com **Supabase** (Auth + Database)  
-- ⚡ Interface rápida com **Vue 3**, **Pinia** e **FullCalendar**
+- ⚡ Interface rápida com **Vue 3** e **FullCalendar**
 
 ---
 
 ## 🖼️ Demonstração
 
-> Em breve: [https://dscalendar.vercel.app](https://dscalendar.vercel.app)
+> Beta com falta de funcionalidades: [https://dscalendar.vercel.app](https://dscalendar.vercel.app)
 
 ---
 
@@ -26,7 +25,7 @@
 
 | Stack        | Tecnologias                                          |
 |--------------|-------------------------------------------------------|
-| 💚 Frontend  | Nuxt 3, Vue 3, TailwindCSS, Pinia, FullCalendar       |
+| 💚 Frontend  | Nuxt 3, Vue 3, TailwindCSS, FullCalendar              |
 | 🛠️ Backend   | Supabase (Database + Auth)                            |
 | 🎨 Estilo    | Tailwind + UI personalizada                           |
 | 🔒 Auth      | Nuxt Auth (via API)                                   |
@@ -38,7 +37,7 @@
 1. **Clone o projeto:**
 
 ```bash
-git clone https://github.com/seu-usuario/dscalendar.git
+git clone https://github.com/LightDNZ/dscalendar.git
 cd dscalendar
 ```
 
@@ -83,6 +82,7 @@ Acesse: [http://localhost:3000](http://localhost:3000)
 - 👨‍🏫 Perfis de professores/alunos (roles)  
 - 🔄 Modo admin (opcional no futuro)  
 - 📊 Estatísticas de uso para usuários
+- ✍️ Notas privadas salvas localmente com sincronização futura
 
 ---
 
