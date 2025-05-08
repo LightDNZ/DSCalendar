@@ -1,9 +1,8 @@
 // middleware/auth.js
-import { createClient } from '@supabase/supabase-js'
 import { parseCookies } from 'h3'
 
 export default defineNuxtRouteMiddleware(async (to, from) => {
-  if (process.client) return // Evita duplicidade no client
+  if (import.meta.client) return // Evita duplicidade no client
 
   const cookies = parseCookies(useRequestEvent())
   const token = cookies['sb-access-token']
@@ -12,17 +11,13 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
     return navigateTo('/login')
   }
 
-  const config = useRuntimeConfig()
-  const supabase = createClient(
-    config.public.supabaseUrl,
-    config.public.supabaseKey
-  )
+  const { $supabase } = useNuxtApp() // Alterei essa parte no middleware para evitar a redundância de criar varios clients para cada requisição
 
-  const { data, error } = await supabase.auth.getUser(token)
+  const { data, error } = await $supabase.auth.getUser(token)
 
   if (error || !data?.user) {
     return navigateTo('/login')
   }
 
-  // aqui da para salvar o usuario para usa dps
+  // Aqui da para salvar o usuario para usar depois
 })

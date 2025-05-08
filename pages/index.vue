@@ -8,7 +8,7 @@
       <!-- Topo -->
       <div>
         <Logo />
-        <h1 class="text-white font-bold text-md mt-8">Calendário</h1>
+        <h1 class="text-white font-bold text-md mt-8">Menu</h1>
         <p class="text-zinc-300 text-sm mt-0.5"></p>
 
         <!-- Data atual -->
@@ -191,12 +191,12 @@ const showNotesSidebar = ref(false);
 const showDropdown = ref(false);
 
 definePageMeta({
-  middleware: ['auth']
+  middleware: 'auth', 
 })
 
 useHead({
   title: 'DSCalendar - Calendário Escolar'
-})
+});
 
 const onDateClick = () => {
   showCalendar.value = !showCalendar.value;

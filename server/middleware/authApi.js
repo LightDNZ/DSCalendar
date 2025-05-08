@@ -1,10 +1,13 @@
 // middleware/authApi.js
 import { createClient } from '@supabase/supabase-js'
-import { parseCookies, createError, eventHandler } from 'h3'
+import { defineEventHandler, createError, parseCookies } from 'h3'
 
-export default eventHandler(async (event) => {
-  // Protege apenas rotas que começam com /api/notes
-  if (!event.path.startsWith('/api/notes')) return
+export default defineEventHandler(async (event) => {
+  // Protege somente rotas /api/notes
+  const url = event.node.req.url || ''
+  if (!url.startsWith('/api/notes')) {
+    return  // libera outras APIs sem checar
+  }
 
   const cookies = parseCookies(event)
   const token = cookies['sb-access-token']
