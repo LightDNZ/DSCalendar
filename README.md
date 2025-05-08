@@ -9,9 +9,8 @@
 - 📅 **Calendário interativo** com eventos em tempo real    
 - 👨‍🎓 **Autenticação de usuários** (login/registro)  
 - 🔧 **Edição colaborativa de eventos** (todos os usuários podem editar o calendário)  
-- 🌙 **Modo escuro/claro**  
 - 📦 Integração com **Supabase** (Auth + Database)  
-- ⚡ Interface rápida com **Vue 3** e **FullCalendar**
+- ⚡ Interface rápida com **Vue 3**
 
 ---
 
@@ -25,10 +24,10 @@
 
 | Stack        | Tecnologias                                          |
 |--------------|-------------------------------------------------------|
-| 💚 Frontend  | Nuxt 3, Vue 3, TailwindCSS, FullCalendar              |
+| 💚 Frontend  | Nuxt 3, Vue 3, TailwindCSS, VueCal                    |
 | 🛠️ Backend   | Supabase (Database + Auth)                            |
 | 🎨 Estilo    | Tailwind + UI personalizada                           |
-| 🔒 Auth      | Nuxt Auth (via API)                                   |
+| 🔒 Auth      | Supabase Auth (via API)                               |
 
 ---
 
@@ -83,6 +82,7 @@ Acesse: [http://localhost:3000](http://localhost:3000)
 - 🔄 Modo admin (opcional no futuro)  
 - 📊 Estatísticas de uso para usuários
 - ✍️ Notas privadas salvas localmente com sincronização futura
+- 🌙 **Modo escuro/claro**  
 
 ---
 
