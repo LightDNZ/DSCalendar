@@ -80,7 +80,7 @@
       v-if="showManageModal"
       class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
     >
-      <div class="bg-white dark:bg-zinc-900 rounded-lg p-6 w-[90%] max-w-lg">
+      <div class="bg-zinc-900 rounded-lg p-6 w-[90%] max-w-lg">
         <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Gerenciar Eventos</h2>
         <ul class="space-y-3 max-h-96 overflow-y-auto">
           <li
@@ -113,7 +113,7 @@
       v-if="showDeleteModal"
       class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
     >
-      <div class="bg-white dark:bg-zinc-900 rounded-lg p-6 w-80">
+      <div class="bg-zinc-900 rounded-lg p-6 w-80">
         <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Confirmar Exclusão</h2>
         <p class="text-gray-700 dark:text-gray-300 mb-6">
           Tem certeza que deseja excluir o evento "{{ eventToDelete?.title }}"?
